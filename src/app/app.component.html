@@ -67,7 +67,7 @@
         <div class="flex flex-column gap-3 pb-3">
 
         <div>
-        <h5>Did the T/M notice any abnormality?</h5>
+        <h5>Did the T/M notice any abnormality?<span class="ml-1 text-red-500">*</span></h5>
         <!-- <div class="formgroup-inline">
             <div class="field-radiobutton">
                 <input type="radio" id="aa1no" name="aa1noyes">
@@ -82,7 +82,7 @@
         </div>
 
         <div *ngIf="aa_q1_value=='no'">
-        <h5>What do you think are the problems that are related to work?</h5>
+        <h5>What do you think are the problems that are related to work?<span class="ml-1 text-red-500">*</span></h5>
         <div class="field-checkbox">
             <p-checkbox name="aa_q1no1" value="1" [(ngModel)]="aa_q1no1_values" inputId="aa_q1no1_v1"></p-checkbox>
             <label for="aa_q1no1_v1">T/M did not notice defect condition</label>
@@ -105,7 +105,7 @@
 
         <div class="flex flex-column gap-2" *ngIf="aa_q1_value=='yes'">
         <div>
-        <h5>What kind of abnormality occurred?</h5>
+        <h5>What kind of abnormality occurred?<span class="ml-1 text-red-500">*</span></h5>
         <div class="field-checkbox">
             <p-checkbox name="aa_q1yes1" value="1" [(ngModel)]="aa_q1yes1_values" inputId="aa_q1yes1_v1"></p-checkbox>
             <label for="aa_q1yes1_v1">Abnormality in Assembling</label>
@@ -122,7 +122,7 @@
         </div>
 
         <div>
-        <h5>Is there any record of corrective action or troubleshooting taken?</h5>
+        <h5>Is there any record of corrective action or troubleshooting taken?<span class="ml-1 text-red-500">*</span></h5>
         <div class="flex gap-3">
         <!-- <p-radioButton label="No" name="groupname" value="no" [(ngModel)]="selectedValue"></p-radioButton>
         <p-radioButton label="Yes" name="groupname" value="yes" [(ngModel)]="selectedValue"></p-radioButton> -->
@@ -131,7 +131,7 @@
         </div>
 
         <div>
-        <h5>What went wrong with troubleshooting?</h5>
+        <h5>What went wrong with troubleshooting?<span class="ml-1 text-red-500">*</span></h5>
         <p-selectButton [options]="aa_q1yes3_options" [(ngModel)]="aa_q1yes3_value" optionLabel="label" optionValue="value"></p-selectButton>
 
         <div class="mt-3" *ngIf="aa_q1yes3_value=='1'">
