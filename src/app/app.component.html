@@ -22,7 +22,7 @@
 </div>
 </p-toolbar>
 <div class="flex flex-row mt-2" style="height:35rem">
-<div class="w-26rem mr-3">
+<div class="w-20rem mr-3">
 <p-listbox [(ngModel)]="selectedTab" [options]="tabs" optionLabel="name" optionValue="index" optionDisabled="disabled" (click)="tabClicked()">
     <ng-template let-tab pTemplate="item">
         <div>{{tab.name}}</div>
